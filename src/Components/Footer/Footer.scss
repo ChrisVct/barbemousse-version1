@@ -1,0 +1,28 @@
+@import "../Variable-prop2.scss";
+
+footer {
+  width: 100%;
+  min-height: 200px;
+  height: auto;
+  background-color: $color-cinq;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10vw;
+  color: $color-secondary;
+  font-family: "Trade Winds";
+  @media screen and( max-width:700px) {
+    flex-direction: column;
+  }
+  div.blabla1 {
+    margin: 10px auto;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}

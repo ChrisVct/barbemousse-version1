@@ -1,0 +1,72 @@
+@import "../Variable-prop2.scss";
+$bgcolor-navBar: linear-gradient(#e66465, #9198e5);
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  font-family: "Trade Winds";
+  font-size: 22px;
+  font-weight: 900;
+  background: linear-gradient(black 5%, transparent 100%);
+  position: fixed;
+  top: 0;
+  //   margin: 0 auto;
+  z-index: 8;
+  text-shadow: 2px 2px 15px black;
+  @media screen and( max-width:$breakpoint-mobile) {
+    flex-direction: column;
+    :nth-child(4) {
+      display: none;
+    }
+    :nth-child(1) {
+      padding-top: 10px;
+      a {
+        padding-top: 50px;
+      }
+    }
+  }
+  li {
+    margin: 0 10px;
+    width: 165px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    text-decoration: none;
+    color: $color-secondary;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  img {
+    max-width: 240px;
+    text-align: center;
+    align-items: center;
+    transition: all 300ms ease-out;
+    &:hover {
+      transform: rotate(360deg);
+    }
+  }
+}
+.displayNavBtn {
+  display: none;
+  color: $color-secondary;
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  z-index: 10;
+  @media screen and( max-width:$breakpoint-mobile) {
+    display: block;
+  }
+}
+
+#notreHistoire:target {
+  // display: block;
+  // position: relative;
+  top: -120px;
+  // visibility: hidden;
+}
