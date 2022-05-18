@@ -17,7 +17,7 @@ export const pointsDeVente = [
     pourConsommer: "non",
   },
   {
-    nom: "La Case à bananes",
+    nom: "La Case à banadnes",
     id: "3hd",
     adresse: "52 Rte de Paris",
     cp_ville: "14120, Mondeville",

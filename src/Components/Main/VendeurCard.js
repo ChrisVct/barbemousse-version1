@@ -16,17 +16,21 @@ export default function VendeurCard({
           <i className="fa-solid fa-champagne-glasses"></i>
         </span>
       ) : (
-        <i className="fa-solid fa-cart-arrow-down"></i>
+        <span>
+          <i className="fa-solid fa-cart-arrow-down"></i>
+        </span>
       )
     ) : (
-      <i className="fa-solid fa-champagne-glasses"></i>
+      <span>
+        <i className="fa-solid fa-champagne-glasses"></i>
+      </span>
     );
   return (
     <li className="vendeur-card">
       <h2>{nom}</h2>
       <span>- {icon} -</span>
-      <p>{adresse}</p>
-      <p>, {cp_ville} </p>
+      <p>{adresse} - </p>
+      <p>{cp_ville} </p>
     </li>
   );
 }
