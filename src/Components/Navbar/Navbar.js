@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <>
       {(toggleMenu || largeur > 900) && (
-        <nav>
+        <nav onClick={toggleNav}>
           <li>
             <a href="#notreHistoire" className="navLink">
               Notre Histoire
