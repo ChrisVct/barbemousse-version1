@@ -122,7 +122,7 @@ export default function Main() {
           </p>
         </div>
         <article className="beerList">
-          {/* <ul>
+          <ul>
             {pointsDeVente.map(
               ({ id, nom, adresse, cp_ville, pourAcheter, pourConsommer }) => (
                 <VendeurCard
@@ -132,10 +132,10 @@ export default function Main() {
                   cp_ville={cp_ville}
                   pourAcheter={pourAcheter}
                   pourConsommer={pourConsommer}
-                  />
-                  )
-                  )}
-                </ul> */}
+                />
+              )
+            )}
+          </ul>
         </article>
       </section>
       <div className="bg3 fixed-bg"></div>

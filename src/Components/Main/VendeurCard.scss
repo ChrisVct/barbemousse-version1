@@ -3,16 +3,17 @@
 li.vendeur-card {
   display: flex;
   list-style-type: none;
-  max-width: 50%;
-  min-width: 45%;
+  min-width: min-content;
+  width: inherit;
   margin: 3px 0px;
+  justify-content: center;
   p,
   i {
     font-size: 18px;
   }
   h2 {
     padding-bottom: 4px;
-    //text-decoration: underline dotted 3px $color-cinq;
+    text-decoration: underline dotted 3px $color-cinq;
     padding-right: 5px;
     font-size: 22px;
   }
